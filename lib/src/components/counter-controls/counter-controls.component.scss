@@ -1,0 +1,8 @@
+$size: 25px;
+$doubleSize: 50px;
+
+button {
+    padding: $size $doubleSize;
+    font-weight: bold;
+    font-size: $size;
+}
