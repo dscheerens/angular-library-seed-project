@@ -1,8 +1,8 @@
-![Version](https://img.shields.io/badge/version-5.0.0-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-6.0.0-brightgreen.svg)
 
-# Seed project for Angular 5+ libraries
+# Seed project for Angular 6+ libraries
 
-**This repository contains a seed project for developing Angular 5 modules / libraries, which provides the following features:**
+**This repository contains a seed project for developing Angular 6 modules / libraries, which provides the following features:**
 
 * Generation of distribution ready packages that comply to the [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview).
 * Support for a demo application to test the library.
@@ -24,7 +24,7 @@ To create a new Angular library based on this seed project, use the following st
 
 * Fork, clone or download [this repository](https://github.com/dscheerens/angular-library-seed-project).
 * Update the package name in `package.json`.
-* Update the UMD module ID for the package in `package.json -> ngPackage.lib.umdId`.
+* Update the UMD module ID for the package in `ng-package.json -> lib.umdId`.
   The convention for this ID is to use a lower camel-case version of the package name and using a dot as a replacement for slashes.
   So the UMD module ID for a package called `@john-doe/my-awesome-library` would then become `johnDoe.myAwesomeLibrary`.
 * Edit `demo/tsconfig.json` and change `example-module` to the name of the package.
@@ -65,7 +65,7 @@ For third party libraries that are used only in the demo application or for buil
 > Installing third party libraries as normal dependencies will hide version conflicts if your published library is used in another library or application.
 > That way you risk that consumers of your library will run it with incompatible versions of the dependencies, resulting in bugs or strange compile errors.
 
-After having installed a third party library you will also have to update `ngPackage.lib.umdModuleIds` list in `package.json`.
+After having installed a third party library you will also have to update `lib.umdModuleIds` list in `ng-package.json`.
 This property is used to tell [**Rollup.js**](https://rollupjs.org/) (which is used by **ng-packagr**) what the global names of the external dependencies are.
 You have to do this for every dependency except `@angular/*`, `rxjs` and `tslib`, since **ng-packagr** automatically handles these for you.
 Below you can find a list of commonly used libraries and their global name:
