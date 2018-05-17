@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Subscription } from 'rxjs/Subscription';
-import { interval } from 'rxjs/observable/interval';
+import { Subscription, interval } from 'rxjs';
 
 import { TimedCounterServiceConfiguration } from '../models/timed-counter-service-configuration.model';
 import { SimpleCounterService } from './simple-counter.service';

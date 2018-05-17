@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { CounterService } from '../../services/counter.service';
 
