@@ -24,7 +24,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --project=demo",
-    "lint": "tslint -p lib/tsconfig.lib.json -t stylish -c tslint.json",
+    "lint": "tslint -p lib/tsconfig.lint.json -t stylish -c tslint.json",
     "test": "ng test --project=lib --watch=false --code-coverage",
     "test.watch": "ng test --project=lib --watch=true --code-coverage",
     "test.aot": "ng build --project=demo --prod",
