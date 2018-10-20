@@ -8,7 +8,7 @@
 * Support for a demo application to test the library.
 * Separate directories for the library and demo application sources.
 * Unit tests with coverage reports.
-* AOT readiness testing.
+* AOT readiness testing (via demo application production builds).
 * Configured to use [recommended TSLint standards](https://github.com/dscheerens/tslint-presets).
 * SCSS compilation.
 * Component template and style inlining.
@@ -43,16 +43,16 @@ To create a new Angular library based on this seed project, use the following st
 
 ## NPM scripts
 
-| Command      | Description                                                                                    |
-|--------------|------------------------------------------------------------------------------------------------|
-| `ng`         | Executes an Angular CLI command. For example: `npm run ng -- serve --app=demo`.                |
-| `start`      | Runs the demo application.                                                                     |
-| `lint`       | Runs TSLint for the library sources (found in the `lib/src` directory).                        |
-| `test`       | Executes a single run of the unit tests and generates a coverage report. Use this for CI jobs. |
-| `test.watch` | Runs the unit tests in watch mode.                                                             |
-| `test.aot`   | Makes a production build of the demo application to test the AOT readiness of the library.     |
-| `build`      | Generates a distribution package of the library.                                               |
-| `release`    | Publishes a generated distribution package to the NPM repository.                              |
+| Command      | Description                                                                                         |
+|--------------|-----------------------------------------------------------------------------------------------------|
+| `ng`         | Executes an Angular CLI command. For example: `npm run ng -- serve --app=demo`.                     |
+| `start`      | Runs the demo application.                                                                          |
+| `lint`       | Runs TSLint for the library sources (found in the `lib/src` directory).                             |
+| `test`       | Executes a single run of the unit tests and generates a coverage report. Use this for CI jobs.      |
+| `test.watch` | Runs the unit tests in watch mode.                                                                  |
+| `build`      | Generates a distribution package of the library.                                                    |
+| `build.demo` | Makes a production build of the demo application (requires a library build first: `npm run build`). |
+| `release`    | Publishes a generated distribution package to the NPM repository.                                   |
 
 ## Using third party libraries
 
