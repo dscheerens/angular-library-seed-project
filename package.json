@@ -32,6 +32,7 @@
     "build.demo": "ng build --project=demo --prod",
     "publish.dist": "npm publish build/dist"
   },
+  "sideEffects": false,
   "peerDependencies": {
     "@angular/common": ">=6.0.0",
     "@angular/core": ">=6.0.0",
