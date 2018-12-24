@@ -1,8 +1,8 @@
-![Version](https://img.shields.io/badge/version-6.0.0-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-7.0.0-brightgreen.svg)
 
-# Seed project for Angular 6+ libraries
+# Seed project for Angular 7+ libraries
 
-**This repository contains a seed project for developing Angular 6 modules / libraries, which provides the following features:**
+**This repository contains a seed project for developing Angular 7 modules / libraries, which provides the following features:**
 
 * Generation of distribution ready packages that comply to the [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview).
 * Support for a demo application to test the library.
@@ -27,7 +27,7 @@ To create a new Angular library based on this seed project, use the following st
 * Update the UMD module ID for the package in `ng-package.json -> lib.umdId`.
   The convention for this ID is to use a lower camel-case version of the package name and using a dot as a replacement for slashes.
   So the UMD module ID for a package called `@john-doe/my-awesome-library` would then become `johnDoe.myAwesomeLibrary`.
-* Edit `demo/tsconfig.json` and change `example-module` to the name of the package.
+* Edit the `demo/tsconfig.json` and `demo/tsconfig.prod.json` files and change `example-module` to the name of the package.
 * Delete the example library found in the `lib/src` folder.
 * Create a new clean barrel file `index.ts` in `lib/src`.
 * Update the demo application and remove all references to the example module (`example-module`).

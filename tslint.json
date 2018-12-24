@@ -1,6 +1,4 @@
 {
     "extends": "@dscheerens/tslint-presets/tslint.recommended.angular.json",
-    "rules": {
-        "no-unused-variable": false
-    }
+    "rules": { }
 }
