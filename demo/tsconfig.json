@@ -7,7 +7,7 @@
         "types": [],
         "paths": {
             "example-module": [
-                "../lib/public_api"
+                "../lib/public-api"
             ]
         }
     },
