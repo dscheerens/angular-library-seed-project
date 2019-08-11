@@ -3,6 +3,7 @@ import { async, ComponentFixture, inject, TestBed } from '@angular/core/testing'
 import { CounterModule } from '../../counter.module';
 import { CounterService } from '../../services/counter.service';
 import { SimpleCounterService } from '../../services/simple-counter.service';
+
 import { CounterDisplayComponent } from './counter-display.component';
 
 describe('counter display component', () => {

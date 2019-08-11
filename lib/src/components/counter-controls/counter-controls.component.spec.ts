@@ -1,10 +1,10 @@
 import { async, ComponentFixture, inject, TestBed } from '@angular/core/testing';
-
 import { take } from 'rxjs/operators';
 
 import { CounterModule } from '../../counter.module';
 import { CounterService } from '../../services/counter.service';
 import { SimpleCounterService } from '../../services/simple-counter.service';
+
 import { CounterControlsComponent } from './counter-controls.component';
 
 describe('counter controls component', () => {

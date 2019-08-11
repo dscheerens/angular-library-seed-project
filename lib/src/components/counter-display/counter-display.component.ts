@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { CounterService } from '../../services/counter.service';
 
 @Component({
     selector: 'counter-display',
-    templateUrl: 'counter-display.component.html',
-    styleUrls: [ 'counter-display.component.scss' ]
+    templateUrl: './counter-display.component.html',
+    styleUrls: [ './counter-display.component.scss' ],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CounterDisplayComponent {
 

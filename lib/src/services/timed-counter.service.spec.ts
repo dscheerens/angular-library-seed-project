@@ -1,8 +1,8 @@
 import { fakeAsync, inject, TestBed, tick } from '@angular/core/testing';
-
 import { first } from 'rxjs/operators';
 
 import { TimedCounterServiceConfiguration } from '../models/timed-counter-service-configuration.model';
+
 import { CounterService } from './counter.service';
 import { TimedCounterService } from './timed-counter.service';
 

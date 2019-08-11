@@ -1,8 +1,8 @@
-![Version](https://img.shields.io/badge/version-7.0.0-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-8.0.0-brightgreen.svg)
 
-# Seed project for Angular 7+ libraries
+# Seed project for Angular 8+ libraries
 
-**This repository contains a seed project for developing Angular 7 modules / libraries, which provides the following features:**
+**This repository contains a seed project for developing Angular 8 modules / libraries, which provides the following features:**
 
 * Generation of distribution ready packages that comply to the [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview).
 * Support for a demo application to test the library.
